@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- For assistance related to logback-translator or configuration  -->
+<!-- files in general, please contact the logback user mailing list -->
+<!-- at http://www.qos.ch/mailman/listinfo/logback-user             -->
+<!--                                                                -->
+<!-- For professional support please see                            -->
+<!--    http://www.qos.ch/shop/products/professionalSupport         -->
+<!--                                                                -->
+<configuration>
+  <appender name="appender1" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>[%d{yy/MM/dd HH:mm:ss:SSS}][%t][%p] -%l %m%n</pattern>
+    </encoder>
+  </appender>
+  
+  <logger name="edu.xust.ocr">
+  	<appender-ref ref="appender1"/>
+  </logger>
+  
+  <root level="debug">
+    <appender-ref ref="appender1"/>
+  </root>
+</configuration>

@@ -1,0 +1,7 @@
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+    
+---
+com:  baidu:    orc:      sdk:        app-id: ocr-demo        api-key: CL084qDNn8dH1718Y4bxK1mY
+        api-secret: ggHwmXGvHssuiVp6hlXtTTaxqeb8KuhE
